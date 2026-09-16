@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia do Usuário do WebPMO — ONS</title>
+<meta name="description" content="Guia do Usuário do WebPMO — Sistema de Gestão de Informações do PMO para Web. Operador Nacional do Sistema Elétrico (ONS).">
+
+<link rel="icon" href="images/ons_logo.png">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Renderização de fórmulas em LaTeX -->
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] },
+  options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] },
+  startup: { typeset: false }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+
+<!-- Conversor de Markdown + suporte a notas de rodapé -->
+<script src="https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/dist/markdown-it.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/markdown-it-footnote@4.0.0/dist/markdown-it-footnote.min.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <button class="menu-toggle" id="menuBtn" aria-label="Abrir menu">&#9776;</button>
+    <img class="logo-img" src="images/ons_logo.png" alt="ONS — Operador Nacional do Sistema Elétrico">
+    <span class="divider"></span>
+    <span>WebPMO <small>Guia do Usuário · v2.0</small></span>
+  </div>
+  <div class="top-actions">
+    <a class="btn btn-primary" href="https://pops.ons.org.br/pop/#6325" target="_blank" rel="noopener noreferrer">Acessar o WebPMO ↗</a>
+    <a class="btn btn-ghost" href="mailto:pmo@ons.org.br">✉ pmo@ons.org.br</a>
+  </div>
+</header>
+
+<div class="backdrop" id="backdrop"></div>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <h2>Índice do Guia</h2>
+    <nav class="toc" id="toc"></nav>
+  </aside>
+
+  <main class="main">
+    <section class="hero" id="topo">
+      <div class="hero-badge">Versão 2.0 · Agosto de 2026</div>
+      <h1>Guia do Usuário do WebPMO</h1>
+      <p class="hero-sub">Sistema de Gestão de Informações do PMO para Web — <strong>WebPMO</strong></p>
+      <p class="hero-desc">Orientações para os Agentes de Geração na declaração dos dados de sua responsabilidade
+        para o horizonte de curto prazo, com vistas à elaboração do Programa Mensal de Operação Energética (PMO)
+        do Operador Nacional do Sistema Elétrico — ONS.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://pops.ons.org.br/pop/#6325" target="_blank" rel="noopener noreferrer">Acessar o WebPMO ↗</a>
+        <a class="btn btn-ghost" href="mailto:pmo@ons.org.br">Falar com a Equipe do PMO ✉</a>
+      </div>
+    </section>
+
+    <!-- O conteúdo abaixo é carregado automaticamente de "conteudo.md" -->
+    <div id="conteudo">
+      <div class="loading">
+        <div class="spinner"></div>
+        Carregando o conteúdo do guia…
+      </div>
+    </div>
+  </main>
+</div>
+
+<footer class="foot">
+  <div>Operador Nacional do Sistema Elétrico — ONS · Gerência de Programação Mensal (PRM)</div>
+  <div>Guia do Usuário do WebPMO — Versão 2.0 · Agosto de 2026</div>
+  <div class="fbtns">
+    <a class="btn btn-primary" href="https://pops.ons.org.br/pop/#6325" target="_blank" rel="noopener noreferrer">Acessar o WebPMO ↗</a>
+    <a class="btn btn-ghost" href="mailto:pmo@ons.org.br">✉ Falar com a Equipe do PMO</a>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" aria-label="Voltar ao topo">↑</button>
+
+<div class="lb" id="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="Fechar">&times;</button>
+  <span class="lb-hint">Clique fora da imagem para fechar</span>
+  <img id="lbImg" src="" alt="">
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
